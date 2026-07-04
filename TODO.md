@@ -2,28 +2,22 @@
 
 ## Step 1 — Plan approval
 - [x] Gather repo state: index.html/style.css/script.js + assets + LRC file.
-- [x] Confirm constraint: **no album cover should move** (including player cover rotation).
+- [x] Confirm constraint: album cover should not move.
 
-## Step 2 — UI structure upgrades (index.html)
-- [ ] Add loading overlay (fade-in/out, progress).
-- [ ] Add visualizer section (canvas under album cover area).
-- [ ] Replace emoji controls with premium inline SVG icons.
+## Step 2 — Song update: “The Reason”
+- [x] Update `index.html` UI (judul & artist: The Reason — Hoobastank).
+- [x] Update `index.html` audio source to `The Reason/The Reason_spotdown.org.mp3`.
+- [x] Update `index.html` bottom bar title/artist.
+- [x] Fix minor indentation issue in bottom bar image.
 
-## Step 3 — Visual polish (style.css)
-- [ ] Enforce fixed/static album cover visuals (no transforms/animations on cover images).
-- [ ] Add noise texture overlay, vignette, glass depth layers.
-- [ ] Implement animated light rays/glow (background only, non-moving cover).
-- [ ] Replace progress bar UI with premium custom styling (smooth, glowing, GPU-friendly).
-- [ ] Improve lyrics transitions + karaoke word fill animation smoothness.
+## Step 3 — Lyrics update
+- [x] Update `script.js` to load `The Reason/The Reason - Hoobastank.lrc`.
+- [x] Update embedded fallback LRC (keep player working under file://).
 
-## Step 4 — Playback & effects (script.js)
-- [ ] Add WebAudio visualizer (AnalyserNode + canvas render loop).
-- [ ] Implement rAF-based unified render loop for progress/lyrics/mini progress.
-- [ ] Upgrade karaoke parsing for Enhanced LRC (per-word timestamps), with fallback.
-- [ ] Add loading overlay progression and fade into UI.
+## Step 4 — Verification
+- [ ] Open `index.html` in browser and confirm:
+  - Play/pause works
+  - Timeline updates
+  - Lyrics sync/auto-scroll works
 
-## Step 5 — Performance & testing
-- [ ] Verify playback, seeking, shuffle/repeat behavior.
-- [ ] Validate lyrics sync + auto-scroll.
-- [ ] Confirm 60fps-friendly animations (no layout thrashing).
 
